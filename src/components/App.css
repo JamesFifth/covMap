@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+* {
+  margin: 0%;
+  font-family: "Montserrat";
+}
+
+body {
+  /* background-color: #f5f6fa; */
+  background: rgb(0, 0, 0);
+}
+
+/* whole app container style */
+.app {
+  display: flex;
+  justify-content: space-evenly;
+  /* background-color: #f5f6fa; */
+  background: rgb(0, 0, 0);
+  padding: 10px;
+}
+
+.app__dropdown {
+  background-color: rgb(155, 144, 144);
+  border: none;
+}
+
+.app__header {
+  /* flex put everything one row */
+  display: flex;
+  align-items: center;
+  /* margin bottom outside */
+  margin-bottom: 20px;
+  /* have space between children */
+  justify-content: space-between;
+}
+
+.app__header > h1 {
+  color: #a71b1b;
+  font-size: 2.5rem;
+}
+
+/* InfoBox styles */
+.app__stats {
+  display: flex;
+  text-align: center;
+  justify-content: space-between;
+}
+
+/* left part of app take 90% of the space */
+.app__left {
+  flex: 0.9;
+}
+
+.app__information > h3 {
+  color: #201d1d;
+  font-weight: 400;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.app__information > h3:last-of-type {
+  margin-top: 1rem;
+}
+
+/* when screen is less than 990 px, apply the following css styles */
+@media (max-width: 990px) {
+  .app {
+    flex-direction: column;
+  }
+}
